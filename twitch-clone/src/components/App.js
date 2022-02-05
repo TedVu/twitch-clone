@@ -1,13 +1,19 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 const PageOne = () => {
-  return <div> Page 1</div>;
+  return (
+    <div>
+      <Link to="/pageTwo"> Page 1 </Link>
+    </div>
+  );
 };
 
 const PageTwo = () => {
   return <div> Page 2</div>;
 };
+
+// BrowserRouter can make deployment really difficult.
 
 const App = () => {
   return (
